@@ -1,0 +1,128 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto;
+  height: 100%;
+  gap: 4rem;
+}
+
+.btn {
+  background: #ff8ba7;
+  color: #232946;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #fcbac9;
+  
+}
+
+.btn_encriptado, .btn_desencriptado {
+  width: 30%;
+}
+
+.btn_desencriptado {
+  background: #f9bc60;
+  color: #232946;
+
+}
+
+.btn_desencriptado:hover {
+  background: #f5d29e;
+}
+
+.btn-copy {
+  background: #232946;
+  color: #b8c1ec;
+  width: 75%;
+  margin-top: 4rem;
+}
+
+.btn-copy:hover {
+  background: #364663;
+}
+
+.texto_encriptado, .texto_desencriptado {
+  background: #e2daeb;
+  border-radius: 5px;
+}
+
+.form_encriptado, .form_desencriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.texto_encriptado__input, .texto_desencriptado__input {
+  width: 23.2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+  margin-bottom: 0.5rem;
+  height: 35rem;
+  background: #e2daeb;
+  color: #1b1325;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+  .btn_encriptado, .btn_desencriptado {
+    width: 100%;
+  }
+
+  .texto_encriptado__input, .texto_desencriptado__input {
+    height: 20rem;
+    width: 17rem;
+  }
+
+  .btn-copy {
+    
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+}
+
+@media screen and (width: 768px) {
+  .texto_encriptado__input, .texto_desencriptado__input{
+    width: 40rem;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .wrapper{
+    width: 90%;
+  }
+
+  .btn_encriptado, .btn_desencriptado{
+    width: 40%;
+  }
+}
