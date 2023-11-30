@@ -1,0 +1,31 @@
+.encabezado {
+  background: #e2daeb;
+  height: 80px;
+  
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding: 0 20px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.nombre-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f0e17;
+  margin-bottom: 0.5rem;
+}
+
+@media  screen and (max-width: 768px) {
+
+  .nombre-brand {
+    display: none;
+  }
+  
+}
