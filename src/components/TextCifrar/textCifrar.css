@@ -1,0 +1,100 @@
+.texto_cifrado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90rem;
+  /* background: #e2daeb; */
+  border-radius: 5px;
+  border: 1px solid #e2daeb;
+}
+
+
+.cifrado_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.cifrado_form__input{
+  width: -webkit-fill-available;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 38.5rem;
+  /* background: #e2daeb; */
+  background: transparent;
+  color: #e2daeb;
+  font-size: 1.5rem;
+}
+
+.cifrado_form__input::placeholder{
+  color: #e2daeb;
+  font-size: 1.5rem;
+}
+
+.btn_group {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.btn_group__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.text_alert {
+  color: #e2daeb;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.btn_group__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .texto_cifrado{
+    width: 95%;
+  }
+  .cifrado_form__input{
+    width: 100%;
+    padding: 0.3rem;
+  }
+
+  .btn_group{
+    margin: 0 auto;
+  }
+  .btn_group__btn{
+    flex-direction: column;
+  }
+
+  .btn_group__text{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (width: 1024px) {
+  .btn_group__text{
+    width: 80%;
+  }
+}
